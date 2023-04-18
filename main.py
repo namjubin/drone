@@ -27,11 +27,11 @@ drone.sendControlWhile(-30, 0, 0, 0, 3000)
 drone.sendControlWhile(0, 0, 0, 0, 1000)
 
 drone.sendControlWhile(0, 0, 0, 30, 3000)
-drone.sendControlWhile(0, 0, 0, -60, 3000)
+drone.sendControlWhile(0, 0, 0, -50, 3000)
 drone.sendControlWhile(0, 0, 0, 30, 3000)
-drone.sendControlWhile(0, 0, 0, -60, 3000)
+drone.sendControlWhile(0, 0, 0, -50, 3000)
 drone.sendControlWhile(0, 0, 0, 30, 3000)
-drone.sendControlWhile(0, 0, 0, -60, 3000)
+drone.sendControlWhile(0, 0, 0, -50, 3000)
 drone.sendControlWhile(0, 0, 0, 30, 3000)
 
 #######################################################
