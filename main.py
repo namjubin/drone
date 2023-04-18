@@ -1,12 +1,11 @@
 from codrone_edu.drone import *
-import time
 
 drone = Drone()
 drone.pair()
 
-drone.takeoff()
-
 drone.speed_change(2)
+
+drone.takeoff()
 
 drone.sendControlWhile(0, 0, 0, 0, 3000)
 
@@ -28,19 +27,27 @@ drone.sendControlWhile(-30, 0, 0, 0, 3000)
 
 #######################################################
 
+drone.sendControlWhile(0, 0, 100, 0, 5000)
+
+drone.sendControlWhile(0, 30, 80, -30, 3000)
+
+#######################################################
+
 drone.sendControlWhile(0, 0, 0, 0, 1000)
 
 drone.sendControlWhile(0, 0, 0, 30, 3000)
 drone.sendControlWhile(0, 0, 0, -60, 3000)
-drone.sendControlWhile(0, 0, 0, 30, 3000)
+drone.sendControlWhile(0, 0, 0, 45, 3000)
 drone.sendControlWhile(0, 0, 0, -60, 3000)
-drone.sendControlWhile(0, 0, 0, 30, 3000)
+drone.sendControlWhile(0, 0, 0, 45, 3000)
 drone.sendControlWhile(0, 0, 0, -60, 3000)
-drone.sendControlWhile(0, 0, 0, 30, 3000)
+drone.sendControlWhile(0, 0, 0, 45, 3000)
 
 #######################################################
 
 drone.sendControlWhile(0, 0, 0, 0, 2000)
+
+time.sleep(0.1)
 
 drone.land()
 drone.close()
